@@ -10,9 +10,11 @@ https://dtvott-abc.akamaized.net/dash_live_1062/manifest.mpd
 #KODIPROP:inputstream.adaptive.license_key=https://cdn4.xaxa.live/keys/dtvec.json
 https://dtvott-cbc.akamaized.net/dash_live_1060/manifest.mpd
 
-#KODIPROP:inputstream.adaptive.stream_headers=Referer="https://vdtgr.com/"
+#KODIPROP:inputstream.adaptive.stream_headers=Referer="https://nowtv.express.com.ar/"
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=https://xaxa.live/keys/tyc.json
 #EXTINF:-1 tvg-logo="https://i.ibb.co/R9bvSwP/qatar.jpg" tvg-group="1QATAR 2022",14H00 - Argentina vs Croacia OP3
-https://d3awnlgqz0szay.cloudfront.net/out/v1/b841c366cbe540e6a106c3ba83e5c8d6/index.m3u8
+https://anbalancer.express.com.ar/live/c1eds/TyC_HD/SA_DASH_cipix/TyC_HD.mpd
 
 #EXTINF:-1 tvg-logo="https://i.ibb.co/R9bvSwP/qatar.jpg" tvg-group="1QATAR 2022",14H00 - Argentina vs Croacia OP4
 #KODIPROP:inputstream.adaptive.license_type=clearkey
@@ -1003,46 +1005,46 @@ https://live-edge01.telecentro.net.ar/live/tlx.smil/televisionlibre.net.m3u8
 #KODIPROP:inputstream.adaptive.license_key=https://cdn4.xaxa.live/keys/viajar.json
 https://cdn.cvattv.com.ar/live/c6eds/Viajar/SA_Live_dash_enc/Viajar.mpd
 
-#EXTINF:-1 tvg-logo="https://i.ibb.co/mzfH8zw/la1.png" tvg-group=" ESPANA", LA 1
+#EXTINF:-1 tvg-logo="https://i.ibb.co/mzfH8zw/la1.png" tvg-group="ESPANA", LA 1
 https://rtvelivestream.akamaized.net/segments/la1/la1_main_dvr.m3u8
 
-#EXTINF:-1 tvg-logo="https://i.ibb.co/h2Xhfzx/la2.png" tvg-group=" ESPANA", LA 2
+#EXTINF:-1 tvg-logo="https://i.ibb.co/h2Xhfzx/la2.png" tvg-group="ESPANA", LA 2
 https://rtvelivestream.akamaized.net/segments/la2/la2_main_dvr.m3u8
 
-#EXTINF:-1 tvg-logo="https://i.ibb.co/KLMTj8J/anrtena3.png" tvg-group=" ESPANA", ANTENA 3
+#EXTINF:-1 tvg-logo="https://i.ibb.co/KLMTj8J/anrtena3.png" tvg-group="ESPANA", ANTENA 3
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=https://cdn4.xaxa.live/keys/antena3.json
 https://cdn.cvattv.com.ar/live/c6eds/Antena_3/SA_Live_dash_enc_2A/Antena_3.mpd
 
 #KODIPROP:inputstream.adaptive.stream_headers=Origin="https://megatelevisionhd.com"
-#EXTINF:-1 tvg-logo="https://i.ibb.co/VJP3SJd/Cuatro.jpg" tvg-group=" ESPANA", CUATRO
+#EXTINF:-1 tvg-logo="https://i.ibb.co/VJP3SJd/Cuatro.jpg" tvg-group="ESPANA", CUATRO
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=https://cdn4.xaxa.live/keys/cuatro.json
 https://crytonep.herokuapp.com/https://cuatro-dash-movistarplus.emisiondof6.com/dash/cuatro.isml/manifest.mpd
 
 #KODIPROP:inputstream.adaptive.stream_headers=User-Agent="Mozilla/5.0 (X11; Linux aarch64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.100 Safari/537.36 CrKey/1.40.156414"
-#EXTINF:-1 tvg-logo="https://i.ibb.co/2yHGvPT/telecinco.png" tvg-group=" ESPANA", TELECINCO
+#EXTINF:-1 tvg-logo="https://i.ibb.co/2yHGvPT/telecinco.png" tvg-group="ESPANA", TELECINCO
 https://api55.tvgratis.live/streams3/master.m3u8?id=922
 
 #KODIPROP:inputstream.adaptive.stream_headers=Origin="https://megatelevisionhd.com"
-#EXTINF:-1 tvg-logo="https://i.ibb.co/qgF3TWw/lasexta.png" tvg-group=" ESPANA", LA SEXTA
+#EXTINF:-1 tvg-logo="https://i.ibb.co/qgF3TWw/lasexta.png" tvg-group="ESPANA", LA SEXTA
 http://ott.riotelecomm.es:4512/m3u8/LASEXTAHD.m3u8
 
 #KODIPROP:inputstream.adaptive.stream_headers=User-Agent="Mozilla/5.0 (X11; Linux aarch64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.100 Safari/537.36 CrKey/1.40.156414"
-#EXTINF:-1 tvg-logo="https://i.ibb.co/ssG2mHT/MEGA.png" tvg-group=" ESPANA", MEGA
+#EXTINF:-1 tvg-logo="https://i.ibb.co/ssG2mHT/MEGA.png" tvg-group="ESPANA", MEGA
 https://api55.tvgratis.live/streams3/master.m3u8?id=929
 
-#EXTINF:-1 tvg-logo="https://i.ibb.co/F3nX1Kg/TV5MONDE.jpg" tvg-group=" ESPANA", TV5MONDE
+#EXTINF:-1 tvg-logo="https://i.ibb.co/F3nX1Kg/TV5MONDE.jpg" tvg-group="ESPANA", TV5MONDE
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=https://cdn4.xaxa.live/keys/tv5monde.json
 https://cdn.cvattv.com.ar/live/c6eds/TV5_Monde/SA_Live_dash_enc/TV5_Monde.mpd
 
-#EXTINF:-1 tvg-logo="https://i.ibb.co/31J8G4X/TVE.png" tvg-group=" ESPANA", TVE
+#EXTINF:-1 tvg-logo="https://i.ibb.co/31J8G4X/TVE.png" tvg-group="ESPANA", TVE
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=https://cdn4.xaxa.live/keys/tve.json
 https://cdn.cvattv.com.ar/live/c6eds/TV_Espana/SA_Live_dash_enc/TV_Espana.mpd
 
-#EXTINF:-1 tvg-logo="https://i.ibb.co/zPVsS2c/8tv.png" tvg-group=" ESPANA", 8TV
+#EXTINF:-1 tvg-logo="https://i.ibb.co/zPVsS2c/8tv.png" tvg-group="ESPANA", 8TV
 https://8tv-cellnex-hlslive.secure.footprint.net/egress/bhandler/tevecat/tvcat/manifest.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.ibb.co/bBVVr72/tvperu.png" tvg-group="PERU", TV PERU
