@@ -1,5 +1,10 @@
 #EXTM3U list-name="Lista CNT Score" list-image="https://i.ibb.co/ZcnV2yM/2328986-ico.png"
 
+#EXTINF:-1 tvg-logo="https://i.ibb.co/R9bvSwP/qatar.jpg" tvg-group="- QATAR 2022",AVISO IMPORTANTE
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=https://cdn4.xaxa.live/keys/dtvuy.json
+https://dtvott-abc.akamaized.net/dash_live_1062/manifest.mpdddd
+
 #EXTINF:-1 tvg-logo="https://i.ibb.co/R9bvSwP/qatar.jpg" tvg-group="- QATAR 2022",LISTA VENCIDA
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=https://cdn4.xaxa.live/keys/dtvuy.json
