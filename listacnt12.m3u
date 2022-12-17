@@ -1,0 +1,7 @@
+#EXTM3U list-name="Lista CNT Score" list-image="https://i.ibb.co/ZcnV2yM/2328986-ico.png"
+#EXTINF:-1 tvg-logo="#" tvg-group="- QATAR 2022",1)LISTA VENCIDA
+https://dtvott-abc.akamaized.net/dash_live_1062/manifest.mpdddd
+#EXTINF:-1 tvg-logo="#" tvg-group="- QATAR 2022",2)INGRESA A CNT GAMES
+https://dtvott-abc.akamaized.net/dash_live_1062/manifest.mpdddd
+#EXTINF:-1 tvg-logo="#" tvg-group="- QATAR 2022",3)PARA ACTUALIZAR
+https://dtvott-abc.akamaized.net/dash_live_1062/manifest.mpdddd
