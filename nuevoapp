@@ -368,7 +368,7 @@ video {
  height:100%
 }
 .h-28 {
- height:9rem
+ height:7rem
 }
 .h-16 {
  height:4rem
@@ -1271,7 +1271,7 @@ video {
  height:100%
 }
 .h-28 {
- height:9rem
+ height:7rem
 }
 .h-16 {
  height:4rem
@@ -2154,49 +2154,49 @@ border-radius: 0 !important;
 <div class="channels grid grid-cols-2 md:grid-cols-5 gap-6 my-5">
 <div class="p-2 rounded bg-slate-200">
 <a class="flex flex-wrap justify-center items-center h-full channel-link" href="#" target="channelPlayer">
-<img class="h-28 w-28 rounded" src="https://i.ibb.co/qNJHB2g/img1.png" alt="#">
+<img class="h-28 w-28 rounded" src="https://i.ibb.co/KKZCyts/ima1.png" alt="#">
 <span class="bg-cyan-700 hover:bg-cyan-800 p-2 text-center block w-full mt-auto rounded text-white">APÓYANOS</span>
 </a>
 </div>
 <div class="p-2 rounded bg-slate-200">
 <a class="flex flex-wrap justify-center items-center h-full channel-link" href="#" target="channelPlayer">
-<img class="h-28 w-28 rounded" src="https://i.ibb.co/jh3ZqDV/img2.png" alt="#">
+<img class="h-28 w-28 rounded" src="https://i.ibb.co/PMGxdG0/ima2.png" alt="#">
 <span class="bg-cyan-700 hover:bg-cyan-800 p-2 text-center block w-full mt-auto rounded text-white">AGENDA</span>
 </a>
 </div>
 <div class="p-2 rounded bg-slate-200">
 <a class="flex flex-wrap justify-center items-center h-full channel-link" href="#" target="channelPlayer">
-<img class="h-28 w-28 rounded" src="https://i.ibb.co/MGBhNNG/img3.png" alt="#">
+<img class="h-28 w-28 rounded" src="https://i.ibb.co/fp6KZPW/ima3.png" alt="#">
 <span class="bg-cyan-700 hover:bg-cyan-800 p-2 text-center block w-full mt-auto rounded text-white">EVENTOS</span>
 </a>
 </div>
 <div class="p-2 rounded bg-slate-200">
 <a class="flex flex-wrap justify-center items-center h-full channel-link" href="#" target="channelPlayer">
-<img class="h-28 w-28 rounded" src="https://i.ibb.co/9rJtPdW/img4.png" alt="#">
+<img class="h-28 w-28 rounded" src="https://i.ibb.co/XzC0Qx3/ima4.png" alt="#">
 <span class="bg-cyan-700 hover:bg-cyan-800 p-2 text-center block w-full mt-auto rounded text-white">TV EN VIVO</span>
 </a>
 </div>
 <div class="p-2 rounded bg-slate-200">
 <a class="flex flex-wrap justify-center items-center h-full channel-link" href="#" target="channelPlayer">
-<img class="h-28 w-28 rounded" src="https://i.ibb.co/9rJtPdW/img4.png" alt="#">
+<img class="h-28 w-28 rounded" src="https://i.ibb.co/XzC0Qx3/ima4.png" alt="#">
 <span class="bg-cyan-700 hover:bg-cyan-800 p-2 text-center block w-full mt-auto rounded text-white">TV POR PAISES</span>
 </a>
 </div>
 <div class="p-2 rounded bg-slate-200">
 <a class="flex flex-wrap justify-center items-center h-full channel-link" href="#" target="channelPlayer">
-<img class="h-28 w-28 rounded" src="https://i.ibb.co/16GMzSJ/img5.png" alt="#">
+<img class="h-28 w-28 rounded" src="https://i.ibb.co/gyS2HL0/ima5.png" alt="#">
 <span class="bg-cyan-700 hover:bg-cyan-800 p-2 text-center block w-full mt-auto rounded text-white">PLUT0 TV</span>
 </a>
 </div>
 <div class="p-2 rounded bg-slate-200">
 <a class="flex flex-wrap justify-center items-center h-full channel-link" href="#" target="channelPlayer">
-<img class="h-28 w-28 rounded" src="https://i.ibb.co/JdrvKWm/img9.png" alt="#">
+<img class="h-28 w-28 rounded" src="https://i.ibb.co/ygXVvkt/ima6.png" alt="#">
 <span class="bg-cyan-700 hover:bg-cyan-800 p-2 text-center block w-full mt-auto rounded text-white">V¡X TV</span>
 </a>
 </div>
 <div class="p-2 rounded bg-slate-200">
 <a class="flex flex-wrap justify-center items-center h-full channel-link" href="#" target="channelPlayer">
-<img class="h-28 w-28 rounded" src="https://i.ibb.co/4g2qj8L/logopho.jpg" alt="#">
+<img class="h-28 w-28 rounded" src="https://i.ibb.co/3pBw8NH/ima7.png" alt="#">
 <span class="bg-cyan-700 hover:bg-cyan-800 p-2 text-center block w-full mt-auto rounded text-white">PH0T0CALL TV</span>
 </a>
 </div>
@@ -2214,13 +2214,13 @@ border-radius: 0 !important;
 </div>
 <div class="p-2 rounded bg-slate-200">
 <a class="flex flex-wrap justify-center items-center h-full channel-link" href="#" target="channelPlayer">
-<img class="h-28 w-28 rounded" src="https://i.ibb.co/RY3hCck/xtra1.png" alt="#">
+<img class="h-28 w-28 rounded" src="https://i.ibb.co/gwsHfPP/ima8.png" alt="#">
 <span class="bg-cyan-700 hover:bg-cyan-800 p-2 text-center block w-full mt-auto rounded text-white">CNT STREAM</span>
 </a>
 </div>
 <div class="p-2 rounded bg-slate-200">
 <a class="flex flex-wrap justify-center items-center h-full channel-link" href="#" target="channelPlayer">
-<img class="h-28 w-28 rounded" src="https://i.ibb.co/KD8QMTq/xtra2.png" alt="#">
+<img class="h-28 w-28 rounded" src="https://i.ibb.co/z7hTXk5/ima9.png" alt="#">
 <span class="bg-cyan-700 hover:bg-cyan-800 p-2 text-center block w-full mt-auto rounded text-white">OTRAS APPS</span>
 </a>
 </div>
@@ -2232,9 +2232,9 @@ border-radius: 0 !important;
 </div>
 <footer class="mt-4 bg-slate-200 text-zinc-600 py-4">
 <div class="container mx-auto px-4 text-center">
-<p class="text-gray-800 font-light">CL JOTA CODE © 2023</p>
+<p class="text-gray-800 font-light">M90 PLay © 2023</p>
 </div>
-</footer>
+</footer></br></br></br>
 <script async="" src="https://count-server.sharethis.com/v2.0/get_counts?cb=window.__sharethis__.cb&url=https%3A%2F%2Fcljotacode.code%2F"></script><script async="" src="https://buttons-config.sharethis.com/js/5c8abf84200ac0001700c04e.js"></script><script src="/static/js/app.js"></script>
 
 <img src="https://whos.amung.us/swidget/cljotacode.code" style="width: 1px; height: 1px;">
