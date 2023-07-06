@@ -1,4 +1,47 @@
 <style>
+header {
+  background: #000000;
+  width: 100%;
+  position: sticky;
+  z-index: 100;
+  padding-left:15px;
+  padding-top:5px;
+  padding-bottom:8px;
+}
+
+nav {
+  float: right;
+  padding-right:10px;
+  display: table;
+
+}
+
+nav ul li {
+  float: left;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  padding: 8px;
+
+}
+
+
+</style>
+    <script src="https://kit.fontawesome.com/d0e2d731d5.js" crossorigin="anonymous"></script>
+
+<header>
+<a href="go:inicio"><img class="logo" src="https://i.ibb.co/LdWgw70/logom90.png" width=100px;></a>
+    <nav>
+        <ul>
+  <a href="https://www.facebook.com/cntstreamec"><li style="color:red" class="fab fa-facebook-f"></li></a>
+  <a href="http://action_exit"><li style="color:red" class="fa-solid fa-right-from-bracket"></li></a>
+	</ul>
+    </nav>
+</header>
+
+
+
+
+<style>
     *,
 ::before,
 ::after {
@@ -186,10 +229,7 @@ canvas,
 audio,
 iframe,
 embed,
-object {
- display:block;
- vertical-align:middle
-}
+
 img,
 video {
  max-width:100%;
@@ -377,7 +417,7 @@ video {
  height:2rem
 }
 .w-28 {
- width:20rem
+ width:7rem
 }
 .w-full {
  width:100%
@@ -1089,10 +1129,7 @@ canvas,
 audio,
 iframe,
 embed,
-object {
- display:block;
- vertical-align:middle
-}
+
 img,
 video {
  max-width:100%;
@@ -1280,7 +1317,7 @@ video {
  height:2rem
 }
 .w-28 {
- width:20rem
+ width:7rem
 }
 .w-full {
  width:100%
@@ -2141,86 +2178,91 @@ border-radius: 0 !important;
 }#st-4 .st-btn[data-network='copy']:hover {
   width: max-content;
 }</style></head>
+
+<marquee style="color:white;padding-top:10px;">Si deseas adquirir cuentas str3aming originales y a buen precio, contáctanos por WhatsApp 0988750716 (SOLO VENTAS)</marquee>
 <body>
 <nav class="bg-slate-100">
 <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
 
 </div>
-</nav> <div class="container mx-auto px-4">
+</nav> 
+
+
+<div class="container mx-auto px-4">
 <main>
 
 
 
 <div class="channels grid grid-cols-2 md:grid-cols-5 gap-6 my-5">
 <div class="p-2 rounded bg-slate-200">
-<a class="flex flex-wrap justify-center items-center h-full channel-link" href="#" target="channelPlayer">
-<img class="h-28 w-28 rounded" src="https://i.ibb.co/KKZCyts/ima1.png" alt="#">
+<a class="flex flex-wrap justify-center items-center h-full channel-link" href="go:apoyo" target="channelPlayer">
+<img class="h-28 w-28 rounded" src="https://i.ibb.co/MDrD3Hp/ore1.png" alt="#">
 <span class="bg-cyan-700 hover:bg-cyan-800 p-2 text-center block w-full mt-auto rounded text-white">APÓYANOS</span>
 </a>
 </div>
 <div class="p-2 rounded bg-slate-200">
-<a class="flex flex-wrap justify-center items-center h-full channel-link" href="#" target="channelPlayer">
-<img class="h-28 w-28 rounded" src="https://i.ibb.co/PMGxdG0/ima2.png" alt="#">
+<a class="flex flex-wrap justify-center items-center h-full channel-link" href="go:agenda" target="channelPlayer">
+<img class="h-28 w-28 rounded" src="https://i.ibb.co/WP75L6M/ore2.png" alt="#">
 <span class="bg-cyan-700 hover:bg-cyan-800 p-2 text-center block w-full mt-auto rounded text-white">AGENDA</span>
 </a>
 </div>
 <div class="p-2 rounded bg-slate-200">
-<a class="flex flex-wrap justify-center items-center h-full channel-link" href="#" target="channelPlayer">
-<img class="h-28 w-28 rounded" src="https://i.ibb.co/fp6KZPW/ima3.png" alt="#">
+<a class="flex flex-wrap justify-center items-center h-full channel-link" href="go:eventos" target="channelPlayer">
+<img class="h-28 w-28 rounded" src="https://i.ibb.co/PxHJsTP/ore3.png" alt="#">
 <span class="bg-cyan-700 hover:bg-cyan-800 p-2 text-center block w-full mt-auto rounded text-white">EVENTOS</span>
 </a>
 </div>
 <div class="p-2 rounded bg-slate-200">
-<a class="flex flex-wrap justify-center items-center h-full channel-link" href="#" target="channelPlayer">
-<img class="h-28 w-28 rounded" src="https://i.ibb.co/XzC0Qx3/ima4.png" alt="#">
+<a class="flex flex-wrap justify-center items-center h-full channel-link" href="go:canales1" target="channelPlayer">
+<img class="h-28 w-28 rounded" src="https://i.ibb.co/nPZx3XM/ore4.png" alt="#">
 <span class="bg-cyan-700 hover:bg-cyan-800 p-2 text-center block w-full mt-auto rounded text-white">TV EN VIVO</span>
 </a>
 </div>
 <div class="p-2 rounded bg-slate-200">
-<a class="flex flex-wrap justify-center items-center h-full channel-link" href="#" target="channelPlayer">
-<img class="h-28 w-28 rounded" src="https://i.ibb.co/XzC0Qx3/ima4.png" alt="#">
+<a class="flex flex-wrap justify-center items-center h-full channel-link" href="go:paises" target="channelPlayer">
+<img class="h-28 w-28 rounded" src="https://i.ibb.co/nPZx3XM/ore4.png" alt="#">
 <span class="bg-cyan-700 hover:bg-cyan-800 p-2 text-center block w-full mt-auto rounded text-white">TV POR PAISES</span>
 </a>
 </div>
 <div class="p-2 rounded bg-slate-200">
-<a class="flex flex-wrap justify-center items-center h-full channel-link" href="#" target="channelPlayer">
-<img class="h-28 w-28 rounded" src="https://i.ibb.co/gyS2HL0/ima5.png" alt="#">
+<a class="flex flex-wrap justify-center items-center h-full channel-link" href="go:plutomx" target="channelPlayer">
+<img class="h-28 w-28 rounded" src="https://i.ibb.co/nPZx3XM/ore4.png" alt="#">
 <span class="bg-cyan-700 hover:bg-cyan-800 p-2 text-center block w-full mt-auto rounded text-white">PLUT0 TV</span>
 </a>
 </div>
 <div class="p-2 rounded bg-slate-200">
-<a class="flex flex-wrap justify-center items-center h-full channel-link" href="#" target="channelPlayer">
-<img class="h-28 w-28 rounded" src="https://i.ibb.co/ygXVvkt/ima6.png" alt="#">
+<a class="flex flex-wrap justify-center items-center h-full channel-link" href="go:vixtv" target="channelPlayer">
+<img class="h-28 w-28 rounded" src="https://i.ibb.co/nPZx3XM/ore4.png" alt="#">
 <span class="bg-cyan-700 hover:bg-cyan-800 p-2 text-center block w-full mt-auto rounded text-white">V¡X TV</span>
 </a>
 </div>
 <div class="p-2 rounded bg-slate-200">
-<a class="flex flex-wrap justify-center items-center h-full channel-link" href="#" target="channelPlayer">
-<img class="h-28 w-28 rounded" src="https://i.ibb.co/3pBw8NH/ima7.png" alt="#">
+<a class="flex flex-wrap justify-center items-center h-full channel-link" href="http://photocall.tv/tv" target="channelPlayer">
+<img class="h-28 w-28 rounded" src="https://i.ibb.co/nPZx3XM/ore4.png" alt="#">
 <span class="bg-cyan-700 hover:bg-cyan-800 p-2 text-center block w-full mt-auto rounded text-white">PH0T0CALL TV</span>
 </a>
 </div>
 <div class="p-2 rounded bg-slate-200">
-<a class="flex flex-wrap justify-center items-center h-full channel-link" href="#" target="channelPlayer">
-<img class="h-28 w-28 rounded" src="https://i.ibb.co/FVwyCqp/web0.png" alt="#">
+<a class="flex flex-wrap justify-center items-center h-full channel-link" href="go:estreno" target="channelPlayer">
+<img class="h-28 w-28 rounded" src="https://i.ibb.co/jy65YRm/ore5.png" alt="#">
 <span class="bg-cyan-700 hover:bg-cyan-800 p-2 text-center block w-full mt-auto rounded text-white">PELÍCULAS</span>
 </a>
 </div>
 <div class="p-2 rounded bg-slate-200">
-<a class="flex flex-wrap justify-center items-center h-full channel-link" href="#" target="channelPlayer">
-<img class="h-28 w-28 rounded" src="https://i.ibb.co/dtrnkPb/web3.png" alt="#">
+<a class="flex flex-wrap justify-center items-center h-full channel-link" href="go:pelis5" target="channelPlayer">
+<img class="h-28 w-28 rounded" src="https://i.ibb.co/Yb5KZTV/ore6.png" alt="#">
 <span class="bg-cyan-700 hover:bg-cyan-800 p-2 text-center block w-full mt-auto rounded text-white">ANIMES</span>
 </a>
 </div>
 <div class="p-2 rounded bg-slate-200">
-<a class="flex flex-wrap justify-center items-center h-full channel-link" href="#" target="channelPlayer">
-<img class="h-28 w-28 rounded" src="https://i.ibb.co/gwsHfPP/ima8.png" alt="#">
+<a class="flex flex-wrap justify-center items-center h-full channel-link" href="go:tvfree" target="channelPlayer">
+<img class="h-28 w-28 rounded" src="https://i.ibb.co/grbLVKS/ore7.png" alt="#">
 <span class="bg-cyan-700 hover:bg-cyan-800 p-2 text-center block w-full mt-auto rounded text-white">CNT STREAM</span>
 </a>
 </div>
 <div class="p-2 rounded bg-slate-200">
-<a class="flex flex-wrap justify-center items-center h-full channel-link" href="#" target="channelPlayer">
-<img class="h-28 w-28 rounded" src="https://i.ibb.co/z7hTXk5/ima9.png" alt="#">
+<a class="flex flex-wrap justify-center items-center h-full channel-link" href="go:apps" target="channelPlayer">
+<img class="h-28 w-28 rounded" src="https://i.ibb.co/hRP85w5/ore8.png" alt="#">
 <span class="bg-cyan-700 hover:bg-cyan-800 p-2 text-center block w-full mt-auto rounded text-white">OTRAS APPS</span>
 </a>
 </div>
@@ -2230,16 +2272,46 @@ border-radius: 0 !important;
 
 </main>
 </div>
-<footer class="mt-4 bg-slate-200 text-zinc-600 py-4">
-<div class="container mx-auto px-4 text-center">
-<p class="text-gray-800 font-light">M90 PLay © 2023</p>
-</div>
-</footer></br></br></br>
-<script async="" src="https://count-server.sharethis.com/v2.0/get_counts?cb=window.__sharethis__.cb&url=https%3A%2F%2Fcljotacode.code%2F"></script><script async="" src="https://buttons-config.sharethis.com/js/5c8abf84200ac0001700c04e.js"></script><script src="/static/js/app.js"></script>
 
-<img src="https://whos.amung.us/swidget/cljotacode.code" style="width: 1px; height: 1px;">
+<!-- BANNER CUADRADO -->
+<center>
+<script type="text/javascript">
+	atOptions = {
+		'key' : 'bfa568637f71decff736540c584a3211',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.effectivecreativeformats.com/bfa568637f71decff736540c584a3211/invoke.js"></scr' + 'ipt>');
+</script>
+</center>
+<!-- BANNER CUADRADO -->
+<br>
+<!-- BANNER CUADRADO -->
+<center>
+<script type="text/javascript">
+	atOptions = {
+		'key' : 'bfa568637f71decff736540c584a3211',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.effectivecreativeformats.com/bfa568637f71decff736540c584a3211/invoke.js"></scr' + 'ipt>');
+</script>
+</center>
+<!-- BANNER CUADRADO -->
+  
+<br>
+<center><script id="_wautas">var _wau = _wau || []; _wau.push(["small", "je8x3lrrfj", "tas"]);</script><script async src="//waust.at/s.js"></script></center><br><br>
+
+
 </body></html>
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> </head> <div id="bottom-navigation-container"> <div class="bottom-nav active"> <a href="go:S1"> <div class="material-icons">home</div> <div class="bottom-nav-title">Inicio</div> </a> </div> <div class="bottom-nav"> <a href="go:grupo"> <div class="material-icons">search</div> <div class="bottom-nav-title">Buscar</div> </a> </div> <div class="bottom-nav"> <a href="go:reciente"> <div class="material-icons">share</div> <div class="bottom-nav-title">Compartir</div> </a> </div> <div class="bottom-nav"> <a href="go:jugar"> <div class="material-icons">send</div> <div class="bottom-nav-title">Telegram</div> </a> </div> <div class="bottom-nav"> <a href="go:usuarios"> <div class="material-icons">lock</div> <div class="bottom-nav-title">DMCA</div> </a> </div> </div>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> </head> <div id="bottom-navigation-container"> <div class="bottom-nav active"> <a href="go:inicio"> <div class="material-icons">home</div> <div class="bottom-nav-title">Inicio</div> </a> </div> <div class="bottom-nav"> <a href="http://action_search"> <div class="material-icons">search</div> <div class="bottom-nav-title">Buscar</div> </a> </div> <div class="bottom-nav"> <a href="http://action_share"> <div class="material-icons">share</div> <div class="bottom-nav-title">Compartir</div> </a> </div> <div class="bottom-nav"> <a href="https://t.me/+wdYJQuJVTWM2OWJh"> <div class="material-icons">send</div> <div class="bottom-nav-title">Telegram</div> </a> </div> <div class="bottom-nav"> <a href="go:aviso"> <div class="material-icons">lock</div> <div class="bottom-nav-title">DMCA</div> </a> </div>
+
+</div>
+
 
     <style> body{ 
     background: #121212;
@@ -2248,3 +2320,30 @@ border-radius: 0 !important;
     font-family: arial; 
    
   } #bottom-navigation-container{ display: flex; justify-content: center; position: fixed; bottom: 0; width: 100%; padding: 10px 0; box-shadow: 0 -2px 20px rgba(0, 0, 0, .15); Background:#000000; } .bottom-nav{ margin-right: 15px; margin-left: 15px; } .bottom-nav:first-child{ margin-left: 0; } .bottom-nav:last-child{ margin-right: 0; } .bottom-nav > a, .bottom-nav > a:hover, .bottom-nav > a:active{ color: #cccccc; text-decoration: none; } .bottom-nav > a > .material-icons{ display: flex; justify-content: center; font-size: 21px; } .bottom-nav > a > .bottom-nav-title{ font-size: 13px; } .bottom-nav.active > a{ color: #ffffff; } .wrapper-text { max-width: 100%; margin: 0 auto; z-index: 1; top: 0; background: #fff; padding-left: 5em; padding-right: 5em; padding-top: 3em; padding-bottom: 5em; position: flex; height: 100%; font-size: 23px; color: gray } h5 { font-size: 24px } </style>
+
+
+<!-- Codigo para blokear adblock inicio --> 
+<style type='text/css'>
+/* Animation */
+@keyframes fadeInDown{0%{opacity:0;transform:translateY(-20px)}100%{opacity:1;transform:translateY(0)}}
+@keyframes rubberBand{from{transform:scale3d(1,1,1)}30%{transform:scale3d(1.25,0.75,1)}40%{transform:scale3d(0.75,1.25,1)}50%{transform:scale3d(1.15,0.85,1)}65%{transform:scale3d(.95,1.05,1)}75%{transform:scale3d(1.05,.95,1)}to{transform:scale3d(1,1,1)}}
+/* Say Hi to Adblock */
+#arlinablock{background:rgba(0,0,0,0.65);position:fixed;margin:auto;left:0;right:0;top:0;bottom:0;overflow:auto;z-index:999999;animation:fadeInDown 1s}
+#arlinablock .header{margin:0 0 15px 0}
+#arlinablock .inner{background:#e3482d;color:#fff;box-shadow:0 5px 20px rgba(0,0,0,0.1);text-align:center;width:600px;padding:40px;border-radius:5px;margin:7% auto 2% auto;animation:rubberBand 1s}
+#arlinablock button{padding:10px 20px;border:0;background:rgba(0,0,0,0.15);color:#fff;margin:20px 5px;cursor:pointer;transition:all .3s}
+#arlinablock button:hover{background:rgba(0,0,0,0.35);color:#fff;outline:none}
+#arlinablock button.active,#arlinablock button:hover.active{background:#fff;color:#222;outline:none}
+#arlinablock .fixblock{background:#fff;text-align:left;color:#000;padding:20px;height:250px;overflow:auto;line-height:30px}
+#arlinablock .fixblock div{display:none}
+#arlinablock .fixblock div.active{display:block}
+#arlinablock ol{margin-left:20px}
+@media(max-width:768px){#arlinablock .inner{width:calc(100% - 20px);margin:10px auto;padding:15px}}
+</style>
+<script type='text/javascript'>
+//<![CDATA[
+// Say Hi to Adblock
+function downloadJSAtOnload(){var e=document.createElement("script");e.src="https://imparteconocimientos.com/recursos/Anti-AdBlocker.js",document.body.appendChild(e)}window.addEventListener?window.addEventListener("load",downloadJSAtOnload,!1):window.attachEvent?window.attachEvent("onload",downloadJSAtOnload):window.onload=downloadJSAtOnload;
+//]]>
+</script>
+<!-- Codigo para blokear adblock fin -->  
