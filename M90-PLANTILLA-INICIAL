@@ -1,183 +1,54 @@
-<!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cntsportstv.github.io/uikit.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cntsportstv.github.io/styles.css">
+
+    <!-- UIkit JS -->
+    <script src="https://cntsportstv.github.io/uikit.js"></script>
+
+    <!-- Kit´s code fontawesome -->
     <script src="https://kit.fontawesome.com/d0e2d731d5.js" crossorigin="anonymous"></script>
-    <!-- Alternativamente, puedes incluir tu CSS interno dentro de etiquetas style -->
-    <style>
-/* CSS interno */
-body {
-    font-family: 'Poppins', sans-serif;
-    background: #121212;
-}
 
-.lista-canales {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-gap: 10px;
-    padding: 16px;
-}
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
-.limit-responsive {
-    padding: 10px;
-    display: inline-block;
-}
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 
-.limit-responsive .card {
-    box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, .1);
-    padding: 10px;
-    border-radius: 16px;
-    text-align: center;
-    background: #e3e3e3bd;
-    transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1.2) 0s !important;
-    display: inline-block;
-}
+    <!-- JS -->
+    <script src="https://cntsportstv.github.io/master.js"></script>
 
-.limit-responsive .card:hover {
-    box-shadow: 0 24px 40px 0 rgba(32, 53, 90, 0.2);
-    transform: translateX(0px) translateY(-10px) !important;
-}
-
-.limit-responsive .card-image {
-    margin-bottom: 1rem;
-}
-
-.limit-responsive .card-image img {
-    width: 100%;
-    aspect-ratio: 4 / 3;
-    object-fit: cover;
-    border-radius: 16px;
-}
-
-.limit-responsive .card-title {
-    font-size: 1rem;
-    color: #161b30;
-    text-decoration: none;
-    font-weight: 600;
-    margin-bottom: .25rem;
-    display: inline-block;
-}
-
-.skeleton {
-    position: relative;
-}
-
-.skeleton::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 10;
-    background-size: 200%;
-    animation: skeleton .8s infinite reverse;
-    border-radius: 16px;
-}
-
-@keyframes skeleton {
-    0% {
-        background-position: -100% 0;
-    }
-    100% {
-        background-position: 100% 0;
-    }
-}
-
-/* Diseño responsive */
-@media only screen and (max-width: 800px) {
-    .lista-canales {
-        grid-template-columns: repeat(4, 1fr);
-        grid-gap: 20px;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .lista-canales {
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 20px;
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    .lista-canales {
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 20px;
-    }
-}
-/* Reset de estilos básicos */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Estilos de la barra de navegación */
-.navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #121212;
-    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12), 0 2px 4px -1px rgb(98 98 98);
-    color: #fff;
-    padding: 10px 0;
-    z-index: 1000; /* Asegura que la barra esté por encima del resto del contenido */
-}
-
-.container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.logo img {
-    max-height: 40px; /* Ajusta el tamaño del logo según tus necesidades */
-}
-
-.navbar-icons {
-    display: flex;
-}
-
-.navbar-icons a {
-    color: red;
-    font-size: 20px;
-    margin-left: 15px; /* Espacio entre los íconos */
-    text-decoration: none;
-}
-
-.content {
-    /* Ajusta el padding-top según la altura de la barra de navegación para evitar que el contenido se superponga */
-    padding-top: 60px; 
-    /* En un sitio real, este padding-top debe ajustarse según el tamaño de la barra de navegación */
-}
-
-
-    </style>
 </head>
-<body>
 
-<nav class="navbar">
-        <div class="container">
-            <div class="logo">
-                <a href="go:inicio"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjP1Mmw43SyC4FDTjDW6X85ElrUduWJxnT_smWzDmwsLidQhpgJyG4M4HIZr_Yi5azKyCQs0gcyl2Zd4jDB82-G8ABBuFOEMV2nAhH7l9IHmwH8L8pWl-_VwgLhW06A0Wy8gHoNX9TcqiqgJfr5SMMo60BYrDSJ6K9-k_3ue7s4GGAO-4YXePZrNP6kRQc/s16000/logom90.png" alt="Logo"></a>
-            </div>
-            <div class="navbar-icons">
-                <a href="http://action_share"><i class="fas fa-share-nodes menu"></i></a>
-                <a href="http://action_exit"><i class="fas fa-right-from-bracket"></i></a>
-            </div>
+<body class="uk-margin-bottom">
+
+    <nav class="uk-navbar-container uk-margin-small-bottom uk-sticky-fixed" uk-navbar uk-sticky>
+        <div class="uk-navbar-left">
+             <a href="go:inicio"><img class="logo" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjP1Mmw43SyC4FDTjDW6X85ElrUduWJxnT_smWzDmwsLidQhpgJyG4M4HIZr_Yi5azKyCQs0gcyl2Zd4jDB82-G8ABBuFOEMV2nAhH7l9IHmwH8L8pWl-_VwgLhW06A0Wy8gHoNX9TcqiqgJfr5SMMo60BYrDSJ6K9-k_3ue7s4GGAO-4YXePZrNP6kRQc/s16000/logom90.png" alt=""></a>
+        </div>
+        <div class="uk-navbar-right">
+           <a class="uk-link-reset" href="http://action_share">
+                <i class="fa-solid fa-share-nodes menu"></i>
+            </a>
+            <a class="uk-link-reset" href="http://action_exit">
+                <i class="fa-solid fa-right-from-bracket" style="color: red"></i>
+            </a>
         </div>
     </nav>
+    <div class="uk-container" uk-filter="target: .js-filter">
 
-<br><br><br><br>
 
-<marquee style="color:white">PARA OBTENER LA VERSION SIN ANUNCIOS DE ESTA APLICACION, ESCRIBENOS POR TELEGRAM @GOSTREAMEC (S0L0 V3NTAS)</marquee>
-
+<marquee style="color:white">PARA OBTENER LA VERSION SIN ANUNCIOS DE ESTA APLICACION, ESCRIBENOS POR TELEGRAM @GOSTREAMEC (NO DAMOS SOPORTE A LA APLICACION GRATIS, SOLO VENTAS)</marquee>
 
 <!-- BANNER CUADRADO -->
 <center>
@@ -194,124 +65,125 @@ body {
 </center><br>
 <!-- BANNER CUADRADO -->
 
-<div class="lista-canales">
-    <!-- Cada tarjeta de canal -->
-    <div class="limit-responsive">
-        <a href="go:apoyo" class="card">
-            <div class="card-image skeleton">
-                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj1ykDxBLkfM3AV3FDyvcXUYIKpw8cS8UeFSXC5QDzY8WD3A2sSVdLsgSKRCWQ6F96cPRZ8uYi9YEg_rqPVv2OtgsJjjgBe0MYHv5B-VjZfPGy-x77iHzlymjqRS9r05S90NhPtoXgBCBYHLMtPEJ47jWbstgUwtUz5PLMJDvgL8E2v1wtcBCbdD-dpTvI/s16000/APOYO.png" alt="">
-            </div>
-            <span class="card-title skeleton">AP0Y0</span>
+        <ul class="js-filter uk-child-width-1-3 uk-child-width-1-4@s uk-child-width-1-5@m uk-grid-small" uk-grid>
+
+            <li data-color="entretenimiento1">
+                <a href="go:apoyo">
+                    <img class="cover" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlNpZtkOtHBUcoByM6XF8iFkT2UEcDsHezljFkiDCaHoagsCpQvijRsBv4feOgoUBWLVL3OXzvt72TdKIyigKJP7eO9qzaI3lEqHI7eiiZTmx-bGtLDlA6ffpmmx4cgMwAATpTlVmoEpe_vnQrnJ_sybm8VBe6IR6AHuUgI06-Sdr2kj1nZ7HNJ85ynNk/s16000/ore1.png" alt="">
+                </a>
+                <p class="uk-text-center">AP0Y0</p>
+            </li>
+
+            <li data-color="entretenimiento1">
+                <a href="go:agenda">
+                    <img class="cover" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjkdkxLlR_QXgYNEYyguH5xDHb6eVZ9LiNFQ7qnEFxpE9ncMsQooAVbvzrSSznNDMez6o8KoNRdwtScF3_Z11y0yotAppH3E7e5sd-lS0R9ty-v6BlubJcWwUObUZf1ojjrCybg0jZt5gAMbw-kivlSbH4LvQF0g-TZPR3tzN3JdK7iWyIKHnkF6H_mseg/s16000/ore2.png" alt="">
+                </a>
+                <p class="uk-text-center">AG3ND4</p>
+            </li>
+
+
+            <li data-color="entretenimiento1">
+                <a href="go:eventos">
+                    <img class="cover" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhmlQzozDNlHWkgagg0nVnyVr-aX67DBBEndJiSWzYMPIbBywefjwR2OL3gTJmrmEy_77OYvBzmrVk4Mppv0ZFQoZA8SMY5we4rET7x_5OB96Rbd0HJjUiz03WZBxB5OfiTYc6wIhsU3OSEUjQkwehp8G9_zUJIy6exKVNFon96K07Te5rANaWcLtlJaEw/s16000/ore3.png" alt="">
+                </a>
+                <p class="uk-text-center">EV3NT0S</p>
+            </li>
+
+            <li data-color="entretenimiento1">
+                <a href="go:canales1">
+                    <img class="cover" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivPVRw_UltlTebU-vKAsVtCG4DlmyIrde031xKyu1toy58AMyHpI5YNeZzON-kV0RraeV4LQXBkxYBgeTr94N_o53d9t8G_qy_rVJwurPhKfRHT2em8PaUpRBJPcsU3OQtI7_0RnazwGaATkug9Iv9X9cnXiOQWlHPzMITyv4ta06BbTNr4Z_79oVzoIY/s16000/base.png" alt="">
+                </a>
+                <p class="uk-text-center">S3CCI0N #1</p>
+            </li>
+
+
+
+            <li data-color="entretenimiento1">
+                <a href="go:paises">
+                    <img class="cover" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivPVRw_UltlTebU-vKAsVtCG4DlmyIrde031xKyu1toy58AMyHpI5YNeZzON-kV0RraeV4LQXBkxYBgeTr94N_o53d9t8G_qy_rVJwurPhKfRHT2em8PaUpRBJPcsU3OQtI7_0RnazwGaATkug9Iv9X9cnXiOQWlHPzMITyv4ta06BbTNr4Z_79oVzoIY/s16000/base.png" alt="">
+                </a>
+                <p class="uk-text-center">S3CCI0N P4IS</p>
+            </li>
+
+ 
+            <li data-color="entretenimiento1">
+                <a href="go:tvfree">
+                    <img class="cover" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivPVRw_UltlTebU-vKAsVtCG4DlmyIrde031xKyu1toy58AMyHpI5YNeZzON-kV0RraeV4LQXBkxYBgeTr94N_o53d9t8G_qy_rVJwurPhKfRHT2em8PaUpRBJPcsU3OQtI7_0RnazwGaATkug9Iv9X9cnXiOQWlHPzMITyv4ta06BbTNr4Z_79oVzoIY/s16000/base.png" alt="">
+                </a>
+                <p class="uk-text-center">S3CCI0N VIP$</p>
+            </li>
+
+            <li data-color="entretenimiento1">
+                <a href="go:pelis1">
+                    <img class="cover" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjL6_PW5_MT_xPaFqI9EYSMW0rA-tianMdwDQBvcxvYOAt4pIqg9qC-nYrIjuW96PBM1BoY6NnshMJiBFGUxBpIBYXX34sHlejk46Y-lAj1IiMxRwefQcuIb1vMKLguKRWoELlKiRQAvBhUYr32OggH_B3o6dtAHh1Y0S3t8j11j_ZhBY1NXYJBDxD3wcw/s16000/ore5.png" alt="">
+                </a>
+                <p class="uk-text-center">P3LICUL4S</p>
+            </li>
+
+            <li data-color="entretenimiento1">
+                <a href="https://t.me/+pGG9STmtZL5jYWNh">
+                    <img class="cover" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiovecmWvdq16KW7Qu0FduWAxoHLN2lemWw7e9PGcXC1mNimDTAJvItN9EHJcPlLMs6vzG0q_WoS8PTYhDPOhJQTZYSD8e1b9EewJvGVwNKHPXpNSkPe56DVRGDlEwyTCDInlc0EAXHS9RzWnamiKe3NbuSNScePvF7TZQbDwmj84qx7Uq8BtFlUYNFFi0/s16000/ore9.png" alt="">
+                </a>
+                <p class="uk-text-center">S0P0RT3</p>
+            </li>
+
+            <li data-color="entretenimiento1">
+                <a href="go:apps">
+                    <img class="cover" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_jXr0eyyYtnxy2lF-tlSpA0PVp8ZM2G4nWENOXMu-p-t7XUFIVVfcTh1hCX71q3EGLL0LqFJEQ0oCcrODwLgVjBSY7DQQRl19xopS1AlgHZX22yJ-uXMPaUkbTUMtOCh57xtwnh4CKxHHnIuz32UiN5O0s-gG-DzbAaoCqNFppohOo9LhUDjEy8qmadc/s16000/ore8.png" alt="">
+                </a>
+                <p class="uk-text-center">0TR4S APPS</p>
+            </li>
+
+            <li data-color="entretenimiento1">
+                <a href="go:aviso">
+                    <img class="cover" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQhtM9tD3rk4eofDoR1KX09japhJEQ7c0geojeP-_3HMqlfwyneOG8LHKz4UhbzyzbOA30x3H0pFR0JTxut9PeMH5eieAvIZV7wiCQvaHVjdt98xZXo2i2uzvchqsUrDkdAX6JjOMRiO-LURrznMh_W8pJbPSmOStw_tJS8EmiCgKHxR1muatOircayLQ/s16000/ore10.png" alt="">
+                </a>
+                <p class="uk-text-center">DMCA</p>
+            </li>
+
+
+
+            <li data-color="entretenimiento1">
+                <a href="go:demo">
+                    <img class="cover" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQhtM9tD3rk4eofDoR1KX09japhJEQ7c0geojeP-_3HMqlfwyneOG8LHKz4UhbzyzbOA30x3H0pFR0JTxut9PeMH5eieAvIZV7wiCQvaHVjdt98xZXo2i2uzvchqsUrDkdAX6JjOMRiO-LURrznMh_W8pJbPSmOStw_tJS8EmiCgKHxR1muatOircayLQ/s16000/ore10.png" alt="">
+                </a>
+                <p class="uk-text-center">DMCA</p>
+            </li>
+
+  
+            
+
+
+            
+            
+            
+
+
+        
+            
+
+            
+            
+
+            
+            
+		
+		
+		
+		
+	
+		
+		
+		
+
+        </ul>
+    </div>
+
+    <div>
+        <a class="uk-link-reset arriba" href="#" uk-scroll>
+            <i class="fa-solid fa-chevron-up arriba-icon"></i>
         </a>
     </div>
-    <!-- Repite la estructura similar para otros canales -->
-
-    <!-- Cada tarjeta de canal -->
-    <div class="limit-responsive">
-        <a href="go:agenda" class="card">
-            <div class="card-image skeleton">
-                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEir1S0nv8SXa8CGrsD8NMFnyQPrcY4ca2ZK8-j4OQEyx4ULseeCNoQ6AGsseRMW1w0QWqnCsmQX2pj7VSUtLZ5dUNWxFQ5LCzAHmEJaMaJZ-jyUG9bfaUl9ILpJ6c0lYLiLw6t6Wia5DKkfpUI2YmvlS9qLVeyINFu2eZ7yCFK10ZdZj4Hklz_Zg04PmeA/s16000/AGENDA.png" alt="">
-            </div>
-            <span class="card-title skeleton">AG3ND4</span>
-        </a>
-    </div>
-    <!-- Repite la estructura similar para otros canales -->
-
-    <!-- Cada tarjeta de canal -->
-    <div class="limit-responsive">
-        <a href="go:eventos" class="card">
-            <div class="card-image skeleton">
-                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-IrzmmrsE5-34WRtxLXNXUfn7iS_heIb2SzXYTyPwUJJnOj7laprxSi_kMrPWda-YMC_zRocZ8TT2mVuSoFZmCVARY3ApcQOHSZIAHa4O3W8r64AFRnTMJdGpLlU5JXEJCc7sNLSSvJRGwJ-nkRpcwV22nGXPPoT3TtT8grVoYXtyO6p8nZmYsXwTX74/s16000/EVENTO.png" alt="">
-            </div>
-            <span class="card-title skeleton">EV3NT0S</span>
-        </a>
-    </div>
-    <!-- Repite la estructura similar para otros canales -->
-
-    <!-- Cada tarjeta de canal -->
-    <div class="limit-responsive">
-        <a href="go:canales1" class="card">
-            <div class="card-image skeleton">
-                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjXAi3sWEyJzjsASJlcsgGhsqVvIM1Dj5ca-6fFkp7p9glinh_OonTuVwF68SA2cZaWWAKEYzIcxlEZeYvZy8eDji-9r_bORnfe4Thq4Ut-dU2GBgyKaJsMCErnojS-we9ikkRdA1xQS3OGudOF3UwrmkPKfpKlSVWbOT710USht0PKJi4y3_5AbgKargs/s16000/base.png" alt="">
-            </div>
-            <span class="card-title skeleton">S3CCI0N 1</span>
-        </a>
-    </div>
-    <!-- Repite la estructura similar para otros canales -->
-
-    <!-- Cada tarjeta de canal -->
-    <div class="limit-responsive">
-        <a href="go:paises" class="card">
-            <div class="card-image skeleton">
-                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjXAi3sWEyJzjsASJlcsgGhsqVvIM1Dj5ca-6fFkp7p9glinh_OonTuVwF68SA2cZaWWAKEYzIcxlEZeYvZy8eDji-9r_bORnfe4Thq4Ut-dU2GBgyKaJsMCErnojS-we9ikkRdA1xQS3OGudOF3UwrmkPKfpKlSVWbOT710USht0PKJi4y3_5AbgKargs/s16000/base.png" alt="">
-            </div>
-            <span class="card-title skeleton">P4IS3S</span>
-        </a>
-    </div>
-    <!-- Repite la estructura similar para otros canales -->
-
-    <!-- Cada tarjeta de canal -->
-    <div class="limit-responsive">
-        <a href="go:tvfree" class="card">
-            <div class="card-image skeleton">
-                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjXAi3sWEyJzjsASJlcsgGhsqVvIM1Dj5ca-6fFkp7p9glinh_OonTuVwF68SA2cZaWWAKEYzIcxlEZeYvZy8eDji-9r_bORnfe4Thq4Ut-dU2GBgyKaJsMCErnojS-we9ikkRdA1xQS3OGudOF3UwrmkPKfpKlSVWbOT710USht0PKJi4y3_5AbgKargs/s16000/base.png" alt="">
-            </div>
-            <span class="card-title skeleton">SIN ADS</span>
-        </a>
-    </div>
-    <!-- Repite la estructura similar para otros canales -->
-
-    <!-- Cada tarjeta de canal -->
-    <div class="limit-responsive">
-        <a href="go:pelis1" class="card">
-            <div class="card-image skeleton">
-                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiXurcnzofQjXXfH_xhx1Pxrinj5Zm2dgnOD4E8G_Z07vXBf6jNuLPbV0kW6Rpj7bFGdpKOi6JGIVExTWBxmBhk7ssZF6no5Ki75BkCtzAB4qCTR9u7hUEJ9GSIzh78ZKuycZBD_O2htq6XdyE7Npi2SZ_zgTFNExevw8hC9qtljyq2LHVrWtJrYkfAWOU/s16000/PELIS.png" alt="">
-            </div>
-            <span class="card-title skeleton">P3LICUL4S</span>
-        </a>
-    </div>
-    <!-- Repite la estructura similar para otros canales -->
-
-
-    <!-- Cada tarjeta de canal -->
-    <div class="limit-responsive">
-        <a href="https://t.me/+pGG9STmtZL5jYWNh" class="card">
-            <div class="card-image skeleton">
-                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3ybycny0VHMNv9ih-qC6p4RJDDWO5YFmBw0ZVOFe6QfwPTPpcYNYYqtPpp3m3V4gao6JT38G12H-ZVBgIpEt0lYRgyRqz7F3K72Ru273nyHVA7V3Q3TDBPNpgf_20H1fuFwwL05NwxLqUrOq7QKIEQhP2a0C4_PsdbikfipWnQBzl253R9xH-EK5k_rI/s16000/SOPORTE.png" alt="">
-            </div>
-            <span class="card-title skeleton">S0P0RT3</span>
-        </a>
-    </div>
-    <!-- Repite la estructura similar para otros canales -->
-
-    <!-- Cada tarjeta de canal -->
-    <div class="limit-responsive">
-        <a href="go:apps" class="card">
-            <div class="card-image skeleton">
-                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0TSZogK8sg2unnOGgW-vbZGRi6dBUEA9sNhW8NGcukk7IG0vAbKekn0i_ol2Kl9hrdCU0r5I2X2-gyac3lpCOs2ma9vZEQGPP59-a3PW4i_OfJp30o_v-ZlKQrwrpDOJvF06W5dhb6Z7Y9dmUeVmBpFop_epogs2YWHu_sfyIljXUwehzOLUWGPzdX84/s16000/APPS.png" alt="">
-            </div>
-            <span class="card-title skeleton">0TR4S APPS</span>
-        </a>
-    </div>
-    <!-- Repite la estructura similar para otros canales -->
-
-    <!-- Cada tarjeta de canal -->
-    <div class="limit-responsive">
-        <a href="go:aviso" class="card">
-            <div class="card-image skeleton">
-                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjnI2TFK7iWNIhj7gRORKiddV9z5j2gBvIsgowhlQBMbhhT_C5wYq49Lukp2jWuZNDXKT-8A8_DabMycqcRQpsnQRg3JL8q8LhMJ__qeUC9Ch9vgKZgZEcYrMxlNglCy0ZFUUfmh3to1siFiDDVZ4V82F1wX4E_pnHcuTqaANbBroAhALCHkQZXEihmLX8/s16000/DMCA.png" alt="">
-            </div>
-            <span class="card-title skeleton">DMCA</span>
-        </a>
-    </div>
-    <!-- Repite la estructura similar para otros canales -->
-
-
-
-</div>
-
-</body>
-</html>
 
 <br>
 <!-- BANNER CUADRADO -->
@@ -330,8 +202,12 @@ body {
 <!-- BANNER CUADRADO -->
 
 <br>
-<center><script id="_wautas">var _wau = _wau || []; _wau.push(["small", "je8x3lrrfj", "tas"]);</script><script async src="//waust.at/s.js"></script></center>
-<br>
+<center><script id="_wautas">var _wau = _wau || []; _wau.push(["small", "je8x3lrrfj", "tas"]);</script><script async src="//waust.at/s.js"></script></center><br>
+
+
+</body>
+</html>
+
 <!-- Codigo para blokear adblock inicio --> 
 <style type='text/css'>
 /* Animation */
@@ -356,4 +232,4 @@ body {
 function downloadJSAtOnload(){var e=document.createElement("script");e.src="https://cntsportstv.github.io/xADB.js",document.body.appendChild(e)}window.addEventListener?window.addEventListener("load",downloadJSAtOnload,!1):window.attachEvent?window.attachEvent("onload",downloadJSAtOnload):window.onload=downloadJSAtOnload;
 //]]>
 </script>
-<!-- Codigo para blokear adblock fin --> 
+<!-- Codigo para blokear adblock fin -->
